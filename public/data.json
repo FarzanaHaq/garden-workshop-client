@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Lena Patel",
+    "age": 34,
+    "gender": "Female",
+    "status": "Active",
+    "experiences": "Specializes in balcony herb gardens and organic composting.",
+    "image": "https://i.ibb.co/QvybGxQg/12.jpg",
+    "sharedTips": 18,
+    "location": "San Diego, CA"
+  },
+  {
+    "name": "James Kwan",
+    "age": 42,
+    "gender": "Male",
+    "status": "Active",
+    "experiences": "Hydroponics expert with 10+ years of urban gardening.",
+    "image": "https://i.ibb.co/PZSwvp36/22.jpg",
+    "sharedTips": 24,
+    "location": "Seattle, WA"
+  },
+  {
+    "name": "Sofia Hernandez",
+    "age": 29,
+    "gender": "Female",
+    "status": "Inactive",
+    "experiences": "Beginner gardener focusing on indoor plants and succulents.",
+    "image": "https://i.ibb.co/9mZ71dmp/44.jpg",
+    "sharedTips": 6,
+    "location": "Austin, TX"
+  },
+  {
+    "name": "Mohammed Ali",
+    "age": 50,
+    "gender": "Male",
+    "status": "Inactive",
+    "experiences": "Experienced with fruit trees, grafting, and water conservation.",
+    "image": "https://i.ibb.co/gqtG5tk/33.jpg",
+    "sharedTips": 15,
+    "location": "Fresno, CA"
+  },
+  {
+    "name": "Emily Zhang",
+    "age": 38,
+    "gender": "Female",
+    "status": "Active",
+    "experiences": "Vertical garden designer for small urban spaces.",
+    "image": "https://i.ibb.co/G3pD4Y2M/52.jpg",
+    "sharedTips": 22,
+    "location": "New York, NY"
+  },
+  {
+    "name": "Brian Carter",
+    "age": 45,
+    "gender": "Male",
+    "status": "Retired",
+    "experiences": "Retired botanist who now shares tips on native plants.",
+    "image": "https://i.ibb.co/1f6MNnpT/45.jpg",
+    "sharedTips": 40,
+    "location": "Denver, CO"
+  },
+  {
+    "name": "Aisha Khan",
+    "age": 31,
+    "gender": "Female",
+    "status": "Active",
+    "experiences": "Community garden volunteer and compost trainer.",
+    "image": "https://i.ibb.co/mC0MnV7y/60.jpg",
+    "sharedTips": 17,
+    "location": "Chicago, IL"
+  },
+  {
+    "name": "Derrick Brown",
+    "age": 28,
+    "gender": "Male",
+    "status": "Active",
+    "experiences": "Techie turned gardener focusing on automated watering systems.",
+    "image": "https://i.ibb.co/201cvxtg/360-F-431647519-usrb-Q8-Z983h-TYe8zg-A7t1-XVc5f-Etqcpa.jpg",
+    "sharedTips": 9,
+    "location": "Portland, OR"
+  },
+  {
+    "name": "Nina Kapoor",
+    "age": 36,
+    "gender": "Female",
+    "status": "Active",
+    "experiences": "Flower gardener specializing in pollinator-friendly plants.",
+    "image": "https://i.ibb.co/99FX9yYs/18.jpg",
+    "sharedTips": 13,
+    "location": "Boston, MA"
+  },
+  {
+    "name": "Tom Wilson",
+    "age": 65,
+    "gender": "Male",
+    "status": "Inactive",
+    "experiences": "Lifelong gardener sharing tips on seasonal crops and soil health.",
+    "image": "https://i.ibb.co/svZ16k11/65.jpg",
+    "sharedTips": 50,
+    "location": "Phoenix, AZ"
+  }
+]
