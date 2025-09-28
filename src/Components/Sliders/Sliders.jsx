@@ -12,9 +12,9 @@ const Sliders = () => {
   };
 
   return (
-    <div className="max-w-6xl mx-auto my-16">
+    <div className="max-w-6xl mx-auto md:my-10 lg:my-16 px-3 lg:px-0">
       <Slider {...settings}>
-        <div className=" py-32 space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/hRdnSHwx/jonathan-kemper-4z3lnw-Ev-ZQw-unsplash.jpg')]">
+        <div className="py-10 md:py-20 lg:py-32 px-5 space-y-4 bg-cover bg-center bg-[url('https://i.ibb.co/hRdnSHwx/jonathan-kemper-4z3lnw-Ev-ZQw-unsplash.jpg')]">
           <p className="text-center text-white text-3xl font-medium">
             Urban Gardening Workshop
           </p>
@@ -24,7 +24,7 @@ const Sliders = () => {
           </p>
           <p className="text-center text-white text-[18px]">
             <span>Date: </span>
-            <span>June 15, 2025 – 10:00 AM to 1:00 PM</span>
+            <span>June 5, 2025 – 10:00 AM to 1:00 PM</span>
           </p>
           <p className="text-center text-white text-[18px]">
             <span>Location: </span>
@@ -36,7 +36,7 @@ const Sliders = () => {
             </button>
           </div>
         </div>
-        <div className=" py-32 space-y-4 bg-[url('https://i.ibb.co/20k713c1/del-barrett-oo-Upl-Up3ck-unsplash.jpg')] bg-cover bg-center">
+        <div className=" py-11 md:py-20 lg:py-32 px-5 space-y-4 bg-[url('https://i.ibb.co/20k713c1/del-barrett-oo-Upl-Up3ck-unsplash.jpg')] bg-cover bg-center">
           <p className="text-center text-white  text-3xl font-medium">
             Composting 101
           </p>
@@ -58,7 +58,7 @@ const Sliders = () => {
             </button>
           </div>
         </div>
-        <div className=" py-32 space-y-4 bg-[url('https://i.ibb.co/WWqrtFQF/markus-spiske-bk11w-Zwb9-F4-unsplash.jpg')] bg-cover bg-center">
+        <div className=" py-10  md:py-20 lg:py-32 px-5  space-y-4 bg-[url('https://i.ibb.co/WWqrtFQF/markus-spiske-bk11w-Zwb9-F4-unsplash.jpg')] bg-cover bg-center">
           <p className="text-center text-white  text-3xl font-medium">
             Seasonal Planting Guide Live Session
           </p>

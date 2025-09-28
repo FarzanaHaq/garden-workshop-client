@@ -5,7 +5,7 @@ const Trending = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/garden")
+    fetch("https://project-server-sandy.vercel.app/garden")
       .then((response) => response.json())
       .then((fetchedData) => {
         setData(fetchedData);
@@ -14,10 +14,10 @@ const Trending = () => {
 
   return (
     <div className="mt-20 ">
-      <Fade duration={9000}>
+      <Fade duration={3000}>
         <h1 className="text-center text-2xl font-bold text-[#01875F]">Top Trending Tips</h1>
       </Fade>
-      <div className="grid grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mt-10 mb-20 px-4 lg:px-0">
         {data.slice(0, 6).map((data) => (
           <div className="card bg-base-100 rounded-none shadow-2xl">
             <figure>

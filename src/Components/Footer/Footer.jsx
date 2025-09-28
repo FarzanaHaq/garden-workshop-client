@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <div>
-      <footer className="footer sm:footer-horizontal bg-white text-neutral-content p-10 mt-20">
-        <aside className="pl-14">
+      <footer className="footer sm:footer-horizontal bg-white text-neutral-content lg:p-10 mt-20">
+        <aside className="pl-10 lg:pl-18">
           <img
             className="w-15 h-15 bg-white mt-1"
             src="https://i.ibb.co/C5bVPjR6/images-q-tbn-ANd9-Gc-Rp-RM3ra-XQWQD5-Cfa-PQy8-Ppl0-AUsj-L3-ZW2a-Zw-s.png"
@@ -18,7 +18,7 @@ const Footer = () => {
             Contact Us
           </p>
         </aside>
-        <nav className="ml-40">
+        <nav className="ml-10 lg:pt-21 lg:ml-180">
           <h6 className="footer-title text-gray-800">Social</h6>
           <div className="grid grid-flow-col gap-4">
             <a>

@@ -4,13 +4,13 @@ const Explore = () => {
   const data = useLoaderData();
 
   return (
-    <div className="grid grid-cols-2 gap-10 max-w-6xl mx-auto mt-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-6xl mx-auto mt-10 px-5 md:px-5">
       {data.map((data) => (
         <>
           <div className="card card-side bg-base-100 shadow-sm  rounded-none">
-            <figure className="w-[400px]">
+            <figure className="  md:w-[400px]">
               <img
-                className="w-[400px] object-cover object-center"
+                className=" md:w-[400px] object-cover object-center"
                 src={data.image}
                 alt="Movie"
               />

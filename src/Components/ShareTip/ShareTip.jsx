@@ -40,7 +40,7 @@ const ShareTip = () => {
       photo,
     };
 
-    fetch("http://localhost:3000/garden", {
+    fetch("https://project-server-sandy.vercel.app/garden", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -57,12 +57,12 @@ const ShareTip = () => {
 
   return (
     <div>
-      <div className="p-24">
+      <div className="p-10 lg:p-24">
         <h1 className="mb-10 text-center text-2xl font-bold text-[#01875F]">
           Add A Tip!
         </h1>
         <form onSubmit={handleSubmit}>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">
             <fieldset className="fieldset bg-base-200 border-base-300 rounded-box border p-4">
               <label className="label">Title</label>
               <input

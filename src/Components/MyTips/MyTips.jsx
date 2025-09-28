@@ -10,7 +10,7 @@ const MyTips = () => {
   useEffect(() => {
     if (!user?.email) return;
 
-    fetch(`http://localhost:3000/mygarden?email=${user?.email}`, {
+    fetch(`https://project-server-sandy.vercel.app/mygarden?email=${user?.email}`, {
       method: "GET",
     })
       .then((res) => res.json())
@@ -31,7 +31,7 @@ const MyTips = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`http://localhost:3000/garden/${params}`, {
+        fetch(`https://project-server-sandy.vercel.app/garden/${params}`, {
           method: "DELETE",
         })
           .then((res) => res.json())

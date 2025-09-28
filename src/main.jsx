@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
         path: "browse",
         Component: BrowseTips,
-        loader: () => fetch("http://localhost:3000/garden"),
+        loader: () => fetch("https://project-server-sandy.vercel.app/garden"),
       },
       {
         path: "tips",
@@ -58,19 +58,19 @@ const router = createBrowserRouter([
       {
         path: "details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/garden/${params.id}`),
+          fetch(`https://project-server-sandy.vercel.app/garden/${params.id}`),
         Component: Details,
       },
       {
         path: "update/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/garden/${params.id}`),
+          fetch(`https://project-server-sandy.vercel.app/garden/${params.id}`),
         Component: Update,
       },
       {
         path: "explore",
         Component: Explore,
-        loader: () => fetch("http://localhost:3000/profile"),
+        loader: () => fetch("https://project-server-sandy.vercel.app/profile"),
       },
     ],
   },

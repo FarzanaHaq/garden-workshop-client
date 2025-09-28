@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <div>
-      <div className="navbar bg-base-100">
+      <div className="navbar bg-base-100 max-w-7xl mx-auto lg:px-10">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,87 +52,97 @@ const Header = () => {
               <li>
                 <NavLink to={"/"}>Home</NavLink>
               </li>
-            </ul>
-          </div>
-          {user && (
-            <a className="btn btn-ghost text-xl">
-              <div className="flex items-center">
-                <img
-                  className="w-10 h-10 bg-white mt-1"
-                  src="https://i.ibb.co/C5bVPjR6/images-q-tbn-ANd9-Gc-Rp-RM3ra-XQWQD5-Cfa-PQy8-Ppl0-AUsj-L3-ZW2a-Zw-s.png"
-                  alt=""
-                />
-                <span className="text-2xl ml-2">GardenHub</span>
-              </div>
-            </a>
-          )}
-          <div className="navbar-center hidden lg:flex mt-2 ">
-            <ul className="menu menu-horizontal px-1 gap-5">
               <li>
-                <NavLink
-                  to={"/"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                      : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
-                  }
-                >
-                  Home
-                </NavLink>
+                <NavLink to={"/explore"}>Explore Gardeners</NavLink>
               </li>
               <li>
-                <NavLink
-                  to={"/explore"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                      : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
-                  }
-                >
-                  Explore Gardeners
-                </NavLink>
+                <NavLink to={"/browse"}>Browse Tips</NavLink>
               </li>
               <li>
-                <NavLink
-                  to={"/browse"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                      : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
-                  }
-                >
-                  Browse Tips
-                </NavLink>
+                <NavLink to={"/share"}>Share a Garden Tip</NavLink>
               </li>
               <li>
-                <NavLink
-                  to={"/share"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                      : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
-                  }
-                >
-                  Share a Garden Tip
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to={"/tips"}
-                  className={({ isActive }) =>
-                    isActive
-                      ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
-                      : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
-                  }
-                >
-                  My Tips
-                </NavLink>
+                <NavLink to={"/tips"}>My Tips</NavLink>
               </li>
             </ul>
           </div>
-        </div>
 
-        <div className="navbar-end pr-5">
+          <a className="btn btn-ghost text-xl pl-27 md:pl-130 lg:pl-5">
+            <div className="flex items-center">
+              <img
+                className="w-10 h-10 bg-white mt-1"
+                src="https://i.ibb.co/C5bVPjR6/images-q-tbn-ANd9-Gc-Rp-RM3ra-XQWQD5-Cfa-PQy8-Ppl0-AUsj-L3-ZW2a-Zw-s.png"
+                alt=""
+              />
+              <span className="text-[22px] ml-2">GardenHub</span>
+            </div>
+          </a>
+        </div>
+        <div className="navbar-center hidden lg:flex mt-2 ">
+          <ul className="menu menu-horizontal">
+            <li>
+              <NavLink
+                to={"/"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/explore"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                }
+              >
+                Explore Gardeners
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/browse"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                }
+              >
+                Browse Tips
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/share"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                }
+              >
+                Share a Garden Tip
+              </NavLink>
+            </li>
+            <li>
+              <NavLink
+                to={"/tips"}
+                className={({ isActive }) =>
+                  isActive
+                    ? "border-b-2 rounded-none text-[#01875F] font-semibold text-[15px] shadow-none outline-none focus:shadow-none focus:outline-none"
+                    : "font-semibold text-[15px] text-gray-600 shadow-none outline-none focus:shadow-none focus:outline-none"
+                }
+              >
+                My Tips
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-end pr-5 hidden lg:inline-flex">
           {user ? (
             <div>
               <div

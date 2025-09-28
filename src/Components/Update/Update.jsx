@@ -29,7 +29,7 @@ const Update = () => {
       photo,
     };
 
-    fetch(`http://localhost:3000/garden/${data._id}`, {
+    fetch(`https://project-server-sandy.vercel.app/garden/${data._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

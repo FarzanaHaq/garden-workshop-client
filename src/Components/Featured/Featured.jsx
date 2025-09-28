@@ -5,7 +5,7 @@ const Featured = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/profile")
+    fetch("https://project-server-sandy.vercel.app/profile")
       .then((response) => response.json())
       .then((fetchedData) => {
         const newData = fetchedData.filter((item) => item.status === "Active");
@@ -26,9 +26,9 @@ const Featured = () => {
         />
       </h1>
       <div className=" mt-8 mx-auto flex justify-center ">
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {data.map((item) => (
-            <div className="bg-green-100 w-[300px] px-6 rounded-2xl py-8">
+            <div className="bg-green-100 w-[350px] px-6 rounded-2xl py-8">
               <div className="flex justify-center">
                 <img
                   className="border-2 border-white rounded-full w-24 h-24 object-cover "

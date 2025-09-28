@@ -5,7 +5,7 @@ const Details = () => {
   const data = useLoaderData();
   function handleClick(params) {
     console.log(params);
-    fetch(`http://localhost:3000/garden/${params}`, {
+    fetch(`https://project-server-sandy.vercel.app/garden/${params}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({}),

@@ -7,14 +7,15 @@ const BrowseTips = () => {
   const [newData, setNewData] = useState([]);
   const [selected, setSelected] = useState(true);
 
-
   function handleClick(params) {
     const filteredData = data.filter((item) => item.difficulty == params);
     setNewData(filteredData);
+    setSelected(false);
   }
 
   function handleAll() {
     setNewData(data);
+    setSelected(false);
   }
 
   return (
@@ -52,42 +53,84 @@ const BrowseTips = () => {
           />
         </form>
       </div>
-      <div className="overflow-x-auto mt-10 border-2 border-gray-200 p-6">
-        <table className="table">
-          <thead>
-            <tr>
-              <th className="">Image</th>
-              <th>Title</th>
-              <th>Category</th>
-            </tr>
-          </thead>
-          {newData.map((data) => (
-            <tbody key={data._id}>
+
+      {selected ? (
+        <div className="overflow-x-auto mt-10 border-2 border-gray-200 p-6">
+          <table className="table">
+            <thead>
               <tr>
-                <td>
-                  <div className="flex items-center gap-3">
-                    <div className="avatar">
-                      <div className="mask mask-squircle h-12 w-12">
-                        <img
-                          src={data.photo}
-                          alt="Avatar Tailwind CSS Component"
-                        />
+                <th className="">Image</th>
+                <th>Title</th>
+                <th>Category</th>
+              </tr>
+            </thead>
+
+            {data.map((data) => (
+              <tbody key={data._id}>
+                <tr>
+                  <td>
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle h-12 w-12">
+                          <img
+                            src={data.photo}
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </td>
-                <td>{data.title}</td>
-                <td>{data.category}</td>
-                <td>
-                  <Link to={`/details/${data._id}`}>
-                    <button className="btn">See More</button>
-                  </Link>
-                </td>
+                  </td>
+                  <td>{data.title}</td>
+                  <td>{data.category}</td>
+                  <td>
+                    <Link to={`/details/${data._id}`}>
+                      <button className="btn">See More</button>
+                    </Link>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+          </table>
+        </div>
+      ) : (
+        <div className="overflow-x-auto mt-10 border-2 border-gray-200 p-6">
+          <table className="table">
+            <thead>
+              <tr>
+                <th className="">Image</th>
+                <th>Title</th>
+                <th>Category</th>
               </tr>
-            </tbody>
-          ))}
-        </table>
-      </div>
+            </thead>
+
+            {newData.map((data) => (
+              <tbody key={data._id}>
+                <tr>
+                  <td>
+                    <div className="flex items-center gap-3">
+                      <div className="avatar">
+                        <div className="mask mask-squircle h-12 w-12">
+                          <img
+                            src={data.photo}
+                            alt="Avatar Tailwind CSS Component"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </td>
+                  <td>{data.title}</td>
+                  <td>{data.category}</td>
+                  <td>
+                    <Link to={`/details/${data._id}`}>
+                      <button className="btn">See More</button>
+                    </Link>
+                  </td>
+                </tr>
+              </tbody>
+            ))}
+          </table>
+        </div>
+      )}
     </div>
   );
 };
